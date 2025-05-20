@@ -3,7 +3,7 @@
 }
 
 .gap {
-  gap: 15px;
+  gap: 25px;
 }
 
 .d-flex {
@@ -97,7 +97,7 @@
 }
 
 .card {
-  background-color: #F9F9F9;
+  background-color: lch(96.79% 2.83 19.37);
   padding-top: 30px;
   padding-right: 5%;
   padding-bottom: 30px;
@@ -105,7 +105,8 @@
   border-radius: 32px 32px 32px 32px;
 }
 .card:hover {
-  background-color: red;
+  background-color: #F9F9F9;
+  border-radius: 45px 45px;
 }
 .card .card-icon-wrapper img {
   height: 80px;

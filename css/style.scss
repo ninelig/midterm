@@ -65,15 +65,17 @@ text-transform: uppercase;
 }
 
 .card {
-    background-color: #F9F9F9;
+    background-color: lch(96.79% 2.83 19.37);
     padding-top: 30px;
     padding-right: 5%;
     padding-bottom: 30px;
     padding-left: 5%;
     border-radius: 32px 32px 32px 32px;
     &:hover{
-        background-color:red;
+        background-color:#F9F9F9;
+        border-radius: 45px 45px;
     }
+    
     .card-title {
 
     }
