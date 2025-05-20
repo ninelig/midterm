@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Iceberg&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+<script src="js/script.js" defer></script>
+
 </head>
 <body>
     <div id="mainWrapper">
@@ -74,47 +80,58 @@
 
 <section class="statistic-section">
     <div>
-        <h6>search for </h6>
-       <div> 2400 </div> 
-       <h2>products</h2>
+        <h6 class="font-upper">search for </h6>
+       <div class="number"> 2400 </div> 
+       <h2 class="font-upper">products</h2>
     </div>
-    <div>
-<img src="img/icons/dash.svg" alt="">
-<div class="desc-wrapper"><h4 class="title">24000</h4>
-    <div class="desc">products
+    <div class="d-flex">
+        <div class="d-flex align-items-center">
+
+            <div class="dash"></div>
+            <div>
+                <h4 class="title">24000</h4>
+                <div class="desc">products </div>
+            </div>
+        </div>
+        <div class="d-flex align-items-center">
+            <div class="dash-l"></div>
+            <div>
+                <h4 class="title">12</h4>
+                <div class="desc">years </div>
+            </div>
+        </div>
     </div>
 
-</div>
-<div class="mfn-icon-box mfn-icon-box-left mfn-icon-box-center">
-    <div class="icon-wrapper"><img class="scale-with-grid" src="https://themes.muffingroup.com/be/furniturestore/wp-content/uploads/2022/06/furniturestore-sep2.svg" alt="furniturestore-sep2" width="" height=""></div>
-    <div class="desc-wrapper"><h4 class="title">12</h4><div class="desc">years</div></div></div>
-    </div>
 </section>
 
 
-<div>
-    <ul style="display: flex;">
-        <li>
-            <a href="#"> <img src="img/chairsicon.png"> </a> 
-            
-        </li>
-        <li>
-            <a href="#"> <img src="img/bedsicon.png"> </a>          
-        </li>
-        <li>
-               <a href="#"> <img src="img/tablesicon.png"> </a> 
-        </li>
-        <li>
-               <a href="#"> <img src="img/desksicon.png"> </a> 
-        </li>
-        <li>
-               <a href="#"> <img src="img/cabinetsicon.png">  </a> 
-        </li>
-        <li>
-               <a href="#"> <img src="img/lightingicon.png">  </a> 
-        </li>
-    </ul>
- </div>
+<section class="d-flex gap">
+    <div class="card">
+        <div class="card-icon-wrapper"> <img src="img/icons/chair.svg" alt="chair"></div>
+        <h5 class="card-title">chair</h5>
+    </div>
+     <div class="card">
+        <div class="card-icon-wrapper"> <img src="img/icons/bed.svg" alt="bed"></div>
+        <h5 class="card-title">beds</h5>
+    </div>
+     <div class="card">
+        <div class="card-icon-wrapper"> <img src="img/icons/table.svg" alt="table"></div>
+        <h5 class="card-title">table</h5>
+    </div>
+     <div class="card">
+        <div class="card-icon-wrapper"> <img src="img/icons/desk.svg" alt="desk"></div>
+        <h5 class="card-title">desks</h5>
+    </div>
+     <div class="card">
+        <div class="card-icon-wrapper"> <img src="img/icons/cabinet.svg" alt="cabinets"></div>
+        <h5 class="card-title">cabinets</h5>
+    </div>
+     <div class="card">
+        <div class="card-icon-wrapper"> <img src="img/icons/light.svg" alt="LIGHTING"></div>
+        <h5 class="card-title">LIGHTING</h5>
+    </div>
+
+</section>
 
  <div style="display: flex; gap: 15px;">
     <img src="img/bedroom.png" alt="bedroom picture">

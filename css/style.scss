@@ -1,5 +1,12 @@
+@import 'variables';
+@import 'mixins';
+@import 'utils';
 
-$section-width: 1220px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 
 #topBar{
@@ -37,6 +44,14 @@ text-transform: uppercase;
     width: $section-width;
 }
 
+.dash {
+    @include make-dash;
+}
+
+.dash-l {
+    @include make-dash($height: 20px);
+}
+
 #mainHeader{
     @extend %section;
 
@@ -47,6 +62,31 @@ text-transform: uppercase;
     flex-direction: column;
     align-items: center;
     gap: 40px;
+}
+
+.card {
+    background-color: #F9F9F9;
+    padding-top: 30px;
+    padding-right: 5%;
+    padding-bottom: 30px;
+    padding-left: 5%;
+    border-radius: 32px 32px 32px 32px;
+    &:hover{
+        background-color:red;
+    }
+    .card-title {
+
+    }
+    .card-icon-wrapper{
+        img{
+            height:80px;
+        }
+    }
+
+    .card-icon {
+
+    }
+
 }
 
 #heroSection{
@@ -70,4 +110,37 @@ text-transform: uppercase;
     display: flex;
     justify-content: space-between;
 
+}
+
+body{
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+}
+
+
+h2 {
+    font-size: 48px;
+    line-height: 55px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    color:#0b3954;
+}
+
+.number{
+    font-size: 48px;
+    line-height: 55px;
+    font-weight: 600;
+    font-family: Sora;
+    color: #FFB128;
+}
+
+h6 {
+    @include define-title(12px, $primary-color);
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    color:$primary-color;
 }

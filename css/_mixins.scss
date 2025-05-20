@@ -1,0 +1,12 @@
+@mixin define-title($font-size: 16px, $color: #000) {
+    font-size: $font-size;
+    color: $color;
+}
+
+
+@mixin make-dash($color: $secondary-color, $width: 22px, $height: 7px) {
+    background-color: $color;
+    height: $height;
+    width: $width;
+    border-radius: 4px;
+}
