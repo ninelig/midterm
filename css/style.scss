@@ -1,12 +1,8 @@
 @import 'variables';
+@import 'reset';
 @import 'mixins';
 @import 'utils';
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 
 #topBar{
@@ -24,7 +20,7 @@ height: 50px;
     height: 45px;
 }
 
-#mainNav{
+.mainNav{
  display: flex;   
 justify-content: space-between;
 a.link-item{
@@ -37,6 +33,7 @@ height: 50px;
 .link-content{
 color:#0B3954;
 text-transform: uppercase;
+overflow: hidden;
 }
 }
 
@@ -51,6 +48,63 @@ text-transform: uppercase;
 .dash-l {
     @include make-dash($height: 20px);
 }
+
+
+
+.dropdown {
+    position: relative;
+    .dropdown-content {
+        position: absolute;
+        z-index: 999;
+        display: none;
+        padding: 20px;
+        background-color: #fff;
+
+        ul {
+            list-style: none;
+            li {
+                &:not(:last-child) {
+                    border-bottom: 1px solid grey;
+                }
+               
+            }
+        }
+         
+        img {
+            height: 100px;
+            object-fit: contain;
+            position: absolute;
+            right: -40px;
+            bottom: 20px;
+        }
+       
+    }
+
+     &:hover .dropdown-content {
+
+        display: flex;
+       
+    }
+
+}
+
+
+
+.dropdown-content a:hover{
+}
+
+.list-unstyled{
+   width: 40%;
+   background-color: #FFB128
+}
+
+
+.presbar{
+    width: 60%;
+    background-color: red;
+}
+
+
 
 #mainHeader{
     @extend %section;
@@ -145,4 +199,76 @@ h6 {
     font-weight: 600;
     letter-spacing: 0px;
     color:$primary-color;
+}
+
+
+  .product-item{ 
+    width:33.33%;
+    height: 600px;
+    background-repeat: no-repeat;
+    position: relative;
+} 
+
+.item-h{
+   color: #FFFFFF;
+    margin-bottom: 20px; 
+    font-size: 48px;
+    line-height: 55px;
+    font-weight: 700;
+    letter-spacing: 0px;
+}
+
+.item-time{
+    margin-bottom: 20px;
+}
+
+.content{
+    position: absolute;
+    text-align: left;
+    bottom: 20px;
+    left: 20px;
+    color: #FFFFFF;
+
+}
+
+.product-category {
+    position: relative;
+    transition: all .5s ease-in-out;
+    &:hover {
+        top: -15px;
+    }
+}
+
+.image-wrapper {
+    width: 50%;
+}
+
+.text-wrapper {
+    width: 50%;
+    text-align: left;
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    text-transform: capitalize;
+
+}
+
+.spring-items {
+    position: relative;
+    width: 100%;
+}
+
+.spring-btn {
+    @extend .rounded;
+   background-color:$secondary-color;
+    color:#FFF6DC ;
+    width: 200px;
+    height: 45px;
+    &:hover{
+        background-color: $primary-color;
+    }
+    border: none;
+    font-size: 20px;
+    text-transform: capitalize;
 }

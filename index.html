@@ -1,162 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Iceberg&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+        integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Iceberg&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
 
-<script src="js/script.js" defer></script>
+    <script src="js/script.js" defer></script>
 
 </head>
+
 <body>
     <div id="mainWrapper">
-    <header id="mainHeader">
-        <div id="topBar">
-            <img id="logo-image" src="img/furniturestore.svg" alt="furniture store">
-            <input id="searchBar" placeholder="what are you looking for?">
-            <img src="img/Container (5).png" alt="cart Container">
-        </div>
- 
-  
-        <nav id="mainNav">
-            
-            <a href="#" class="link-item"> 
-                <img class="link-icon" src="img/icons/chair.svg"> 
-                <div class="link-content">
-                    <span>CHAIRS</span>
-                    <i class="fa-solid fa-arrow-down"></i>
-                </div>  
-            </a> 
-               <a href="#" class="link-item"> 
-                <img class="link-icon" src="img/icons/bed.svg"> 
+        <header id="mainHeader">
+            <div id="topBar">
+                <img id="logo-image" src="img/furniturestore.svg" alt="furniture store">
+                <input id="searchBar" placeholder="what are you looking for?">
+                <img src="img/Container (5).png" alt="cart Container">
+            </div>
+
+            <nav class="mainNav">
+                <div class="dropdown">
+                    <a href="#" class="link-item">
+                        <img class="link-icon" src="img/icons/chair.svg">
+                        <div class="link-content">
+                            <span>CHAIRS</span>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+                    </a>
+                        <div class="dropdown-content">
+                       
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#">armchairs</a>
+                                    </li>
+                                    <li> 
+                                        <a href="#">bar stools</a> 
+                                    </li>
+                                   <li>
+                                       <a href="#">desk chairs</a>
+                                   </li>
+                                   <li>
+                                       <a href="#">chair pads</a>
+                                   </li>
+                                   <li>
+                                       <a href="#">chaise lounges</a>
+                                   </li>
+                                   <li>
+                                       <a href="#">dining chairs</a>
+                                   </li>
+                                </ul>
+
+                        
+                        <div>
+                            <h3>WE RECOMMEND</h2>
+                            <h4>Modern grey sofa</h3>
+                            <p>
+                                Rutrum non id sem turpis elementum vel id. Magna.
+                            </p>
+                            <div>
+                                <strong>
+                                    $2350.00
+                                </strong>
+                            </div>
+                            <img src="img/greychair.webp" alt="chair">
+                        </div>
+                        </div>
+                </div>
+            <a href="#" class="link-item">
+                <img class="link-icon" src="img/icons/bed.svg">
                 <div class="link-content">
                     <span> beds</span>
                     <i class="fa-solid fa-arrow-down"></i>
-                </div>  
-            </a> 
-               <a href="#" class="link-item"> 
-                <img class="link-icon" src="img/icons/table.svg"> 
+                </div>
+            </a>
+            <a href="#" class="link-item">
+                <img class="link-icon" src="img/icons/table.svg">
                 <div class="link-content">
                     <span>tables</span>
                     <i class="fa-solid fa-arrow-down"></i>
-                </div>  
-            </a> 
-               <a href="#" class="link-item"> 
-                <img class="link-icon" src="img/icons/desk.svg"> 
+                </div>
+            </a>
+            <a href="#" class="link-item">
+                <img class="link-icon" src="img/icons/desk.svg">
                 <div class="link-content">
                     <span>desks</span>
                     <i class="fa-solid fa-arrow-down"></i>
-                </div>  
-            </a> 
-               <a href="#" class="link-item"> 
-                <img class="link-icon" src="img/icons/cabinet.svg"> 
+                </div>
+            </a>
+            <a href="#" class="link-item">
+                <img class="link-icon" src="img/icons/cabinet.svg">
                 <div class="link-content">
                     <span>cabinets</span>
                     <i class="fa-solid fa-arrow-down"></i>
-                </div>  
-            </a> 
-               <a href="#" class="link-item"> 
-                <img class="link-icon" src="img/icons/light.svg"> 
+                </div>
+            </a>
+            <a href="#" class="link-item">
+                <img class="link-icon" src="img/icons/light.svg">
                 <div class="link-content">
                     <span>LIGHTING</span>
                     <i class="fa-solid fa-arrow-down"></i>
-                </div>  
-            </a> 
-            
-            
-         
-            <a href="#"> <img src="img/sales.png" alt="sales">    </a>
-          </nav>
-    </header>
-<section id="heroSection"> 
-    <img src="img/rs-layer.png">
-</section>
+                </div>
+            </a>
 
-<section class="statistic-section">
-    <div>
-        <h6 class="font-upper">search for </h6>
-       <div class="number"> 2400 </div> 
-       <h2 class="font-upper">products</h2>
-    </div>
-    <div class="d-flex">
-        <div class="d-flex align-items-center">
 
-            <div class="dash"></div>
+
+            <a href="#"> <img src="img/sales.png" alt="sales"> </a>
+            </nav>
+        </header>
+        <section id="heroSection">
+            <img src="img/rs-layer.png">
+        </section>
+
+        <section class="statistic-section">
             <div>
-                <h4 class="title">24000</h4>
-                <div class="desc">products </div>
+                <h6 class="font-upper">search for </h6>
+                <div class="number"> 2400 </div>
+                <h2 class="font-upper">products</h2>
+            </div>
+            <div class="d-flex">
+                <div class="d-flex align-items-center">
+
+                    <div class="dash"></div>
+                    <div>
+                        <h4 class="title">24000</h4>
+                        <div class="desc">products </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="dash-l"></div>
+                    <div>
+                        <h4 class="title">12</h4>
+                        <div class="desc">years </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="d-flex gap">
+            <div class="card">
+                <div class="card-icon-wrapper"> <img src="img/icons/chair.svg" alt="chair"></div>
+                <h5 class="card-title">chair</h5>
+            </div>
+            <div class="card">
+                <div class="card-icon-wrapper"> <img src="img/icons/bed.svg" alt="bed"></div>
+                <h5 class="card-title">beds</h5>
+            </div>
+            <div class="card">
+                <div class="card-icon-wrapper"> <img src="img/icons/table.svg" alt="table"></div>
+                <h5 class="card-title">table</h5>
+            </div>
+            <div class="card">
+                <div class="card-icon-wrapper"> <img src="img/icons/desk.svg" alt="desk"></div>
+                <h5 class="card-title">desks</h5>
+            </div>
+            <div class="card">
+                <div class="card-icon-wrapper"> <img src="img/icons/cabinet.svg" alt="cabinets"></div>
+                <h5 class="card-title">cabinets</h5>
+            </div>
+            <div class="card">
+                <div class="card-icon-wrapper"> <img src="img/icons/light.svg" alt="LIGHTING"></div>
+                <h5 class="card-title">LIGHTING</h5>
+            </div>
+
+        </section>
+        <section class="d-flex gap" style="width: 100%;">
+            <div class="product-item" style="background-image: url('img/bedroom.webp');">
+                <div class="content">
+                    <div class="item-time"> time to </div>
+                    <div class="product-category">
+                        <h2 class="item-h">bedroom</h2>
+                        <div class="dash"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item" style="background-image: url('img/desk.webp');">
+
+                <div class="content">
+                    <div class="item-time"> time to </div>
+                    <div class="product-category">
+                        <h2 class="item-h">office</h2>
+                        <div class="dash"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item" style="background-image: url('img/kitchen.webp');">
+                <div class="content">
+                    <div class="item-time"> time to </div>
+                    <div class="product-category">
+                        <h2 class="item-h">kitchen</h2>
+                        <div class="dash"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="spring-items d-flex">
+            <div class="image-wrapper">
+                <img src="img/chair-tree.webp" alt="just some spring issues">
+            </div>
+            <div class="text-wrapper">
+                <h6>search for</h6>
+                <h2>get ready for a spring</h2>
+                <div>Metus ultricies curabitur sodales ipsum elit cubilia.some latin odds.. </div>
+                <button class="spring-btn">actual trends</button>
             </div>
         </div>
-        <div class="d-flex align-items-center">
-            <div class="dash-l"></div>
-            <div>
-                <h4 class="title">12</h4>
-                <div class="desc">years </div>
-            </div>
-        </div>
-    </div>
 
-</section>
-
-
-<section class="d-flex gap">
-    <div class="card">
-        <div class="card-icon-wrapper"> <img src="img/icons/chair.svg" alt="chair"></div>
-        <h5 class="card-title">chair</h5>
-    </div>
-     <div class="card">
-        <div class="card-icon-wrapper"> <img src="img/icons/bed.svg" alt="bed"></div>
-        <h5 class="card-title">beds</h5>
-    </div>
-     <div class="card">
-        <div class="card-icon-wrapper"> <img src="img/icons/table.svg" alt="table"></div>
-        <h5 class="card-title">table</h5>
-    </div>
-     <div class="card">
-        <div class="card-icon-wrapper"> <img src="img/icons/desk.svg" alt="desk"></div>
-        <h5 class="card-title">desks</h5>
-    </div>
-     <div class="card">
-        <div class="card-icon-wrapper"> <img src="img/icons/cabinet.svg" alt="cabinets"></div>
-        <h5 class="card-title">cabinets</h5>
-    </div>
-     <div class="card">
-        <div class="card-icon-wrapper"> <img src="img/icons/light.svg" alt="LIGHTING"></div>
-        <h5 class="card-title">LIGHTING</h5>
-    </div>
-
-</section>
-
- <div style="display: flex; gap: 15px;">
-    <img src="img/bedroom.png" alt="bedroom picture">
-    <img src="img/office.png" alt="office picture">
-    <img src="img/kitchen.png" alt="kitchen picture">
- </div>
-
-<div style="display: flex; justify-content: space-between;">
-    <img src="img/armchairplant.png" alt="armchair picture">
-    <h1>get ready for a spring </h1> <br>
-    <p> <br> Metus ultricies curabitur sadales ipsum elit cubilia.</p> <br>
-    <button style="color:orange;border-radius: 15px;height: 40px; width: 160px;"> Actual trends </button>
-</div>
-<div>
-    <img src="img/batchatalamp.png" alt="batchata lamp">
-    <img src="img/circlecornerstable.png" alt="circle corners table">
-    <img src="img/circlelamp.png" alt="circle lamp">
-    <img src="img/cozyarmchair.png" alt="cozy armchair">
-    <img src="img/diningtable.png" alt="dining table">
-    <img src="img/fancyarmchair.png" alt="fancy armchair">
-</div>
-<span style="align-items: center;"><img src="img/gotoshopbtn.png" alt="go to shop button"></span>
-<div>
-    <img src="img/trendsconainer.png" alt="trends Container">
-</div>
-</div>
 </body>
+
 </html>
