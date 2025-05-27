@@ -58,17 +58,24 @@ overflow: hidden;
         z-index: 999;
         display: none;
         padding: 20px;
+        width: 720px;
         background-color: #fff;
-
         ul {
             list-style: none;
             li {
+                padding: 12px 50px 12px 8px;
                 &:not(:last-child) {
-                    border-bottom: 1px solid grey;
+                    border-bottom: 1px solid $light-grey;
+                }
+        
+                a {
+                    color: #0B3954;
                 }
                
             }
         }
+
+ 
          
         img {
             height: 100px;
@@ -90,18 +97,14 @@ overflow: hidden;
 
 
 
-.dropdown-content a:hover{
-}
-
 .list-unstyled{
    width: 40%;
-   background-color: #FFB128
 }
 
 
 .presbar{
+    padding: 20px;
     width: 60%;
-    background-color: red;
 }
 
 
